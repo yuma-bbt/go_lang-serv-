@@ -18,8 +18,6 @@ func main() {
 		if err != nil {
 			continue
 		}
-		if arg
-
 		go handleClient_tcp(conn)
 	}
 }
@@ -39,7 +37,9 @@ func handleClient_tcp(conn net.Conn) {
 	conn.Write([]byte(message))
 }
 
-func handleClient_udp
+func handleClient_udp(){
+	fmt.println(hoge)
+}
 
 func checkError(err error) {
 	if err != nil {
